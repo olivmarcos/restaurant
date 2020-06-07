@@ -8,11 +8,11 @@ const menu = () => {
 
   ulElement.classList.add("menu");
   button.classList.add("btn");
-  button.innerHTML = "ORDER ONLINE";
+  button.innerHTML = "order online";
 
-  menu.innerHTML = "MENU";
-  about.innerHTML = "ABOUT US";
-  contact.innerHTML = "CONTACT";
+  menu.innerHTML = "menu";
+  about.innerHTML = "about us";
+  contact.innerHTML = "contact";
 
   ulElement.appendChild(menu);
   ulElement.appendChild(about);
@@ -34,6 +34,20 @@ const logo = () => {
   return logo;
 };
 
+const brand = () => {
+  const div = document.createElement("div");
+  const h1 = document.createElement("h1");
+  const p = document.createElement("p");
+
+  div.classList.add("brand");
+  h1.innerHTML = "Morbi rhoncu";
+  p.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
+  div.appendChild(h1);
+  div.appendChild(p);
+
+  return div;
+};
+
 const mainSection = () => {
   const section = document.createElement("section");
   const header = document.createElement("header");
@@ -45,6 +59,7 @@ const mainSection = () => {
   header.appendChild(menu());
 
   section.appendChild(header);
+  section.appendChild(brand());
 
   return section;
 };
