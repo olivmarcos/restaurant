@@ -64,4 +64,33 @@ const mainSection = () => {
   return section;
 };
 
-export { mainSection };
+const itensSection = () => {
+  const section = document.createElement("section");
+
+  const div = document.createElement("div");
+  const burguerImage = document.createElement("img");
+  const friesImage = document.createElement("img");
+  const sodaImage = document.createElement("img");
+  const h1 = document.createElement("h1");
+
+  h1.innerHTML = "order now";
+
+  section.classList.add("itensSection");
+  burguerImage.classList.add("burguer");
+  sodaImage.classList.add("soda");
+
+  burguerImage.src = "/src/assets/img/hamburger.jpg";
+  friesImage.src = "/src/assets/img/fires.png";
+  sodaImage.src = "/src/assets/img/soda.png";
+
+  div.appendChild(h1);
+  div.appendChild(burguerImage);
+  div.appendChild(friesImage);
+  div.appendChild(sodaImage);
+
+  section.appendChild(div);
+
+  return section;
+};
+
+export { mainSection, itensSection };
