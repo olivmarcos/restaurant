@@ -93,4 +93,11 @@ const itensSection = () => {
   return section;
 };
 
-export { mainSection, itensSection };
+const loadHome = () => {
+  const content = document.querySelector("#content");
+
+  content.appendChild(mainSection());
+  content.appendChild(itensSection());
+}
+
+export default{ loadHome };
