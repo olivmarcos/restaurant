@@ -147,9 +147,9 @@ li:hover {
 }
 
 .titles {
-    display: flex;
-    justify-content: space-between;
-    width: 53vw;
+  display: flex;
+  justify-content: space-between;
+  width: 53vw;
 }
 
 .divHeader {
@@ -160,12 +160,72 @@ li:hover {
   padding-bottom: 2rem;
 }
 
+/*MENU*/
+
 .miniBanner {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
   font-size: 1.2rem;
-  padding: .5rem;
+  padding: 0.5rem;
   color: white;
   background-color: #e60033;
+}
+
+.foodSection {
+  width: 100%;
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: gray;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  background: #f6ad49 ;
+  background-size: 81px 159px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.foods {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+}
+
+.food {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  width: 40vw;
+}
+
+.food > h4 {
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  font-family: "Economica", sans-serif;
+  color: #433d3c;
+  font-size: 2rem;
+  letter-spacing: 0;
+}
+
+.food > span {
+  margin-right: 6rem;
+  color: #e60033;
+}
+
+.food > ul {
+  margin-right: 3rem;
+}
+
+.food > ul > li {
+  list-style-type: none;
+  padding: 0.5rem;
+  color: white;
 }
