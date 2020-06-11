@@ -1,6 +1,9 @@
+import { getPages } from "./changePages";
+
 const menu = () => {
   const ulElement = document.createElement("ul");
 
+  const home = document.createElement("li");
   const menu = document.createElement("li");
   const about = document.createElement("li");
   const contact = document.createElement("li");
@@ -10,10 +13,17 @@ const menu = () => {
   button.classList.add("btn");
   button.innerHTML = "order online";
 
+  home.innerHTML = "home";
   menu.innerHTML = "menu";
   about.innerHTML = "about us";
   contact.innerHTML = "contact";
 
+  home.setAttribute("value", 0);
+  menu.setAttribute("value", 1);
+  about.setAttribute("value", 2);
+  contact.setAttribute("value", 3);
+
+  ulElement.appendChild(home);
   ulElement.appendChild(menu);
   ulElement.appendChild(about);
   ulElement.appendChild(contact);
@@ -50,18 +60,25 @@ const brand = () => {
 
 const mainSection = () => {
   const section = document.createElement("section");
-  const header = document.createElement("header");
+  const headerEl = header();
 
   section.classList.add("mainSection");
-  header.classList.add("header");
 
-  header.appendChild(logo());
-  header.appendChild(menu());
-
-  section.appendChild(header);
+  section.appendChild(headerEl);
   section.appendChild(brand());
 
   return section;
+};
+
+const header = () => {
+  const headerEl = document.createElement("header");
+
+  headerEl.classList.add("header");
+
+  headerEl.appendChild(logo());
+  headerEl.appendChild(menu());
+
+  return headerEl;
 };
 
 const itensSection = () => {
@@ -95,9 +112,11 @@ const itensSection = () => {
 
 const loadHome = () => {
   const content = document.querySelector("#content");
+  content.innerHTML = "";
 
   content.appendChild(mainSection());
   content.appendChild(itensSection());
-}
+  getPages();
+};
 
-export default{ loadHome };
+export { loadHome, header };
