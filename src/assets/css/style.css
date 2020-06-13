@@ -183,7 +183,7 @@ li:hover {
   vertical-align: baseline;
   margin: 0;
   padding: 0;
-  background: #f6ad49 ;
+  background: #f6ad49;
   background-size: 81px 159px;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -228,4 +228,57 @@ li:hover {
   list-style-type: none;
   padding: 0.5rem;
   color: white;
+}
+
+/*ABOUT*/
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.aside {
+  height: 70vh;
+}
+
+.asideImg {
+  width: 498px;
+  height: 747px;
+}
+
+.divText {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  text-align: center;
+}
+
+.divText > h1 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.7;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-size: 3rem;
+  color: #433d3c;
+}
+
+.divText > p {
+  margin-top: 5rem;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  vertical-align: baseline;
+  padding: 0;
+  margin-bottom: 1.75rem;
+  font-weight: 400;
+  color: gray;
+  font-size: 1.0625rem;
+  line-height: 1.8;
 }
