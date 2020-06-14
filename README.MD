@@ -2,16 +2,16 @@
 
 A challenge from the Javascript course that you can find in [The Odin Project.](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page)
 
-<img src="./assets/img/app/home.png">
+<img src="./src/assets/img/app/home.png">
 
 <hr>
 
-<img src="./assets/img/app/menu.png">
+<img src="./src/assets/img/app/menu.png">
 
 <hr>
 
-<img src="./assets/img/app/about.png">
+<img src="./src/assets/img/app/about.png">
 
 <hr>
 
-<img src="./assets/img/app/contact.png">
+<img src="./src/assets/img/app/contact.png">
