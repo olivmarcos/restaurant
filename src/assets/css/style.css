@@ -6,14 +6,13 @@
 }
 
 body {
-  background-color: antiquewhite;
+  background: #fcf4e7 url(../img/texture_pattern_2X.jpg) left top;
 }
+
 #content {
   display: flex;
   align-items: center;
   flex-direction: column;
-  /* width: 100vw;
-  height: 93vh; */
 }
 
 .mainSection {
@@ -28,7 +27,7 @@ body {
 
 .header {
   margin-top: 3rem;
-  width: 70vw;
+  width: 70%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -281,4 +280,12 @@ li:hover {
   color: gray;
   font-size: 1.0625rem;
   line-height: 1.8;
+}
+
+/*FOOTER*/
+
+.footer {
+  width: 98vw;
+  height: 20vh;
+  background-color: red;
 }
