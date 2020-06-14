@@ -6,7 +6,7 @@
 }
 
 body {
-  background: #fcf4e7 url(../img/texture_pattern_2X.jpg) left top;
+  background: #fcf4e7;
 }
 
 #content {
@@ -115,7 +115,7 @@ li:hover {
   display: flex;
   justify-content: center;
   text-align: center;
-  background-color: antiquewhite;
+  background: #fcf4e7;
 }
 
 .itensSection > div > h1 {
