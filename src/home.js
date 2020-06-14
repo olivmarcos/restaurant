@@ -1,4 +1,4 @@
-import { getPages } from "./changePages";
+import { getPages } from "./reusable";
 
 const menu = () => {
   const ulElement = document.createElement("ul");

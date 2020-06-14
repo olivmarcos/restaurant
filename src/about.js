@@ -1,4 +1,4 @@
-import { load } from "./changePages";
+import { load } from "./reusable";
 
 const imageSection = () => {
   const section = document.createElement("section");

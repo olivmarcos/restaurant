@@ -35,13 +35,6 @@ const miniBanner = () => {
   content.appendChild(section);
 };
 
-const footer = () => {
-  const footer = document.createElement('footer');
-
-  footer.classList.add('footer');
-  return footer;
-}
-
 const load = () => {
   const content = document.querySelector("#content");
   const div = document.createElement("div");

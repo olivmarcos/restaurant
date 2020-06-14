@@ -1,4 +1,4 @@
-import { load } from "./changePages";
+import { load } from "./reusable";
 import { foods } from "./assets/js/foods";
 
 const foodSection = () => {

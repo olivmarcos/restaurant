@@ -1,4 +1,4 @@
-import { load } from "./changePages";
+import { load } from "./reusable";
 import { locations } from "./assets/js/locations";
 
 const title = (title) => {
