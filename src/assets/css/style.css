@@ -130,6 +130,7 @@ li:hover {
   text-align: center;
   font-size: 2.5rem;
 }
+
 .itensSection > div > img {
   width: 200px;
   height: 200px;
@@ -160,7 +161,6 @@ li:hover {
 }
 
 /*MENU*/
-
 .miniBanner {
   width: 100%;
   text-align: center;
